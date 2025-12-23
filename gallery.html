@@ -1,1 +1,214 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Галерея наших работ. Реальные фото садов до и después применения наших советов.">
+    <title>Галерея работ | САД35</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/logo.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <!-- Шапка с фиксированным меню -->
+    <header class="site-header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <img src="img/logo.png" alt="САД35">
+                    <span>САД35</span>
+                </a>
+                <nav class="main-navigation">
+                    <button class="menu-toggle" aria-label="Меню">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul class="menu">
+                        <li><a href="index.html"><span class="icon">🌿</span> Главная</a></li>
+                        <li><a href="calendar.html"><span class="icon">📅</span> Фенологический календарь</a></li>
+                        <li><a href="tips.html"><span class="icon">💡</span> Советы по уходу</a></li>
+                        <li><a href="about.html"><span class="icon">👤</span> О нас</a></li>
+                        <li><a href="gallery.html" class="active"><span class="icon">📸</span> Галерея работ</a></li>
+                        <li><a href="fertilizers.html"><span class="icon">🌱</span> Виды удобрений</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
 
+    <!-- Hero-секция с параллакс эффектом -->
+    <section class="hero-section gallery-hero fade-in">
+        <div class="hero-content">
+            <h1 class="pulse">Галерея наших работ</h1>
+            <p>Реальные фото садов до и после применения наших советов</p>
+        </div>
+    </section>
+
+    <!-- Параллакс секция -->
+    <section class="parallax-section fade-in">
+        <div class="parallax-content">
+            <h2>До и после преображения</h2>
+            <p>Посмотрите, как наши методы и советы помогают создавать идеальные сады</p>
+        </div>
+    </section>
+
+    <!-- Фильтры галереи -->
+    <section class="section gallery-filters fade-in">
+        <div class="container">
+            <h2 class="section-title">Наши лучшие проекты</h2>
+            <p class="section-subtitle">Выберите категорию для просмотра работ</p>
+            
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Все работы</button>
+                <button class="filter-btn" data-filter="roses">Розарии</button>
+                <button class="filter-btn" data-filter="fruit">Плодовые сады</button>
+                <button class="filter-btn" data-filter="landscape">Ландшафтный дизайн</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Галерея -->
+    <section class="section gallery-grid-section fade-in">
+        <div class="container">
+            <div class="gallery-grid">
+                <!-- Розарий до -->
+                <div class="gallery-item" data-category="roses">
+                    <img src="https://images.unsplash.com/photo-1527515637168-b13a0e734f5d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Розарий до" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h3>Розарий до преображения</h3>
+                        <p>Сад в запущенном состоянии перед применением наших советов</p>
+                    </div>
+                </div>
+                
+                <!-- Розарий после -->
+                <div class="gallery-item" data-category="roses">
+                    <img src="https://images.unsplash.com/photo-1525785298410-6a7a69069a7f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Розарий после" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h3>Розарий после преображения</h3>
+                        <p>Тот же сад через 1 год после применения наших методов</p>
+                    </div>
+                </div>
+                
+                <!-- Плодовый сад до -->
+                <div class="gallery-item" data-category="fruit">
+                    <img src="https://images.unsplash.com/photo-1505506874110-6a7a69069a7f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Плодовый сад до" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h3>Плодовый сад до</h3>
+                        <p>Запущенный сад с минимальным урожаем</p>
+                    </div>
+                </div>
+                
+                <!-- Плодовый сад после -->
+                <div class="gallery-item" data-category="fruit">
+                    <img src="https://images.unsplash.com/photo-1478147427282-58445c4b65f8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Плодовый сад после" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h3>Плодовый сад после</h3>
+                        <p>Обильный урожай после применения наших методов</p>
+                    </div>
+                </div>
+                
+                <!-- Ландшафтный дизайн до -->
+                <div class="gallery-item" data-category="landscape">
+                    <img src="https://images.unsplash.com/photo-1542624937-8d1e9f53c1b9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Ландшафтный дизайн до" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h3>Ландшафтный дизайн до</h3>
+                        <p>Пустой участок без планировки</p>
+                    </div>
+                </div>
+                
+                <!-- Ландшафтный дизайн после -->
+                <div class="gallery-item" data-category="landscape">
+                    <img src="https://images.unsplash.com/photo-1467303420979-3b230b52a8f7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Ландшафтный дизайн после" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h3>Ландшафтный дизайн после</h3>
+                        <p>Современный ландшафтный дизайн с зонами отдыха</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Призыв к действию -->
+    <section class="cta-section fade-in">
+        <div class="container">
+            <h2>Хотите увидеть ваш сад в нашей галерее?</h2>
+            <p>Отправьте фото вашего участка и мы покажем, как его можно улучшить</p>
+            <div class="cta-form">
+                <input type="email" placeholder="Ваш email" required>
+                <button type="submit" class="btn btn-primary">Отправить фото</button>
+            </div>
+            <p class="small-text">Мы публикуем лучшие преображения с вашего разрешения</p>
+        </div>
+    </section>
+
+    <!-- Футер (тот же самый) -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-widget">
+                    <div class="footer-logo">
+                        <img src="img/logo.png" alt="САД35">
+                        <span>САД35</span>
+                    </div>
+                    <p>Мы — команда профессиональных садоводов и ландшафтных дизайнеров с более чем 20-летним опытом.</p>
+                </div>
+                <div class="footer-widget">
+                    <h3>Полезные ссылки</h3>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="calendar.html">Календарь ухода</a></li>
+                        <li><a href="tips.html">Советы по уходу</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                    </ul>
+                </div>
+                <div class="footer-widget">
+                    <h3>Ресурсы</h3>
+                    <ul>
+                        <li><a href="gallery.html">Галерея работ</a></li>
+                        <li><a href="fertilizers.html">Виды удобрений</a></li>
+                        <li><a href="privacy.html">Политика конфиденциальности</a></li>
+                    </ul>
+                </div>
+                <div class="footer-widget">
+                    <h3>Контакты</h3>
+                    <ul class="contacts">
+                        <li>📧 info@sad35.ru</li>
+                        <li>📱 +7 (495) 123-45-67</li>
+                        <li>📍 г. Москва, ул. Садовая, д. 15</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-navigation">
+                <a href="index.html">Главная</a>
+                <a href="calendar.html">Календарь ухода</a>
+                <a href="tips.html">Советы по уходу</a>
+                <a href="about.html">О нас</a>
+                <a href="gallery.html">Галерея работ</a>
+                <a href="fertilizers.html">Виды удобрений</a>
+                <a href="privacy.html">Политика конфиденциальности</a>
+            </div>
+            
+            <div class="site-info">
+                <p>&copy; <span data-year="2025"></span> САД35. Сделано с любовью к садам ❤️</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Кнопка "Наверх" и Preloader (тот же самый код) -->
+    <button id="back-to-top" aria-label="Наверх">
+        <span>↑</span>
+    </button>
+
+    <div id="preloader">
+        <div class="loader">
+            <div class="leaf"></div>
+            <div class="leaf"></div>
+            <div class="leaf"></div>
+        </div>
+        <p>Создаем идеальный сад...</p>
+    </div>
+</body>
+</html>
