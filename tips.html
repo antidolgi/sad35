@@ -1,1 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Полезные советы по уходу за растениями. Проверенные методы и лайфхаки от опытных садоводов.">
+    <title>Советы по уходу | САД35</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/logo.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <!-- Шапка с фиксированным меню -->
+    <header class="site-header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <img src="img/logo.png" alt="САД35">
+                    <span>САД35</span>
+                </a>
+                <nav class="main-navigation">
+                    <button class="menu-toggle" aria-label="Меню">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul class="menu">
+                        <li><a href="index.html"><span class="icon">🌿</span> Главная</a></li>
+                        <li><a href="calendar.html"><span class="icon">📅</span> Фенологический календарь</a></li>
+                        <li><a href="tips.html" class="active"><span class="icon">💡</span> Советы по уходу</a></li>
+                        <li><a href="about.html"><span class="icon">👤</span> О нас</a></li>
+                        <li><a href="gallery.html"><span class="icon">📸</span> Галерея работ</a></li>
+                        <li><a href="fertilizers.html"><span class="icon">🌱</span> Виды удобрений</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
 
+    <!-- Hero-секция -->
+    <section class="hero-section tips-hero fade-in">
+        <div class="hero-content">
+            <h1 class="pulse">Полезные советы для садоводов</h1>
+            <p>Проверенные методы и лайфхаки от опытных садоводов</p>
+            <a href="#categories" class="btn btn-primary">Посмотреть советы</a>
+        </div>
+    </section>
+
+    <!-- Категории советов -->
+    <section class="section tips-categories fade-in" id="categories">
+        <div class="container">
+            <h2 class="section-title">Категории советов</h2>
+            <p class="section-subtitle">Выберите интересующую вас тему для получения подробной информации</p>
+            
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-icon">🌸</div>
+                    <h3>Виды цветов</h3>
+                    <p>Уход за розами, тюльпанами, лилиями и другими цветами</p>
+                    <a href="#flowers" class="read-more">Подробнее →</a>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">☀️</div>
+                    <h3>Времена года</h3>
+                    <p>Сезонные работы в саду по месяцам</p>
+                    <a href="#seasons" class="read-more">Подробнее →</a>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">🪱</div>
+                    <h3>Болезни и вредители</h3>
+                    <p>Как распознать и бороться с проблемами</p>
+                    <a href="#pests" class="read-more">Подробнее →</a>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">🔧</div>
+                    <h3>Инструменты</h3>
+                    <p>Выбор и уход за садовыми инструментами</p>
+                    <a href="#tools" class="read-more">Подробнее →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Советы по видам цветов -->
+    <section class="section tips-content fade-in" id="flowers">
+        <div class="container">
+            <h2 class="section-title">Виды цветов</h2>
+            
+            <div class="tips-grid">
+                <div class="tip-card">
+                    <img src="https://images.unsplash.com/photo-1527515637168-b13a0e734f5d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Розы">
+                    <h3>Как правильно поливать розы</h3>
+                    <p>Узнайте секреты идеального полива для обильного цветения и здоровых растений. Правильный полив — ключ к здоровью ваших роз!</p>
+                    <a href="#" class="read-more">Читать подробнее →</a>
+                </div>
+                <div class="tip-card">
+                    <img src="https://images.unsplash.com/photo-1488816570972-5c5827b5a6b5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Тюльпаны">
+                    <h3>Посадка тюльпанов осенью</h3>
+                    <p>Правильные сроки и техника посадки тюльпанов для обильного цветения весной. Узнайте, как подготовить луковицы к зиме.</p>
+                    <a href="#" class="read-more">Читать подробнее →</a>
+                </div>
+                <div class="tip-card">
+                    <img src="https://images.unsplash.com/photo-1507575728209-dedce82e729b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Лилии">
+                    <h3>Подкормка лилий для обильного цветения</h3>
+                    <p>Какие удобрения нужны лилиям в разные периоды вегетации. Секреты получения крупных и ярких цветов.</p>
+                    <a href="#" class="read-more">Читать подробнее →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер (тот же самый, что и на главной странице) -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-widget">
+                    <div class="footer-logo">
+                        <img src="img/logo.png" alt="САД35">
+                        <span>САД35</span>
+                    </div>
+                    <p>Мы — команда профессиональных садоводов и ландшафтных дизайнеров с более чем 20-летним опытом.</p>
+                </div>
+                <div class="footer-widget">
+                    <h3>Полезные ссылки</h3>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="calendar.html">Календарь ухода</a></li>
+                        <li><a href="tips.html">Советы по уходу</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                    </ul>
+                </div>
+                <div class="footer-widget">
+                    <h3>Ресурсы</h3>
+                    <ul>
+                        <li><a href="gallery.html">Галерея работ</a></li>
+                        <li><a href="fertilizers.html">Виды удобрений</a></li>
+                        <li><a href="privacy.html">Политика конфиденциальности</a></li>
+                    </ul>
+                </div>
+                <div class="footer-widget">
+                    <h3>Контакты</h3>
+                    <ul class="contacts">
+                        <li>📧 info@sad35.ru</li>
+                        <li>📱 +7 (495) 123-45-67</li>
+                        <li>📍 г. Москва, ул. Садовая, д. 15</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-navigation">
+                <a href="index.html">Главная</a>
+                <a href="calendar.html">Календарь ухода</a>
+                <a href="tips.html">Советы по уходу</a>
+                <a href="about.html">О нас</a>
+                <a href="gallery.html">Галерея работ</a>
+                <a href="fertilizers.html">Виды удобрений</a>
+                <a href="privacy.html">Политика конфиденциальности</a>
+            </div>
+            
+            <div class="site-info">
+                <p>&copy; <span data-year="2025"></span> САД35. Сделано с любовью к садам ❤️</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Кнопка "Наверх" и Preloader (тот же самый код) -->
+    <button id="back-to-top" aria-label="Наверх">
+        <span>↑</span>
+    </button>
+
+    <div id="preloader">
+        <div class="loader">
+            <div class="leaf"></div>
+            <div class="leaf"></div>
+            <div class="leaf"></div>
+        </div>
+        <p>Создаем идеальный сад...</p>
+    </div>
+</body>
+</html>
