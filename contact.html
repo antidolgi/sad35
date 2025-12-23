@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Форма обратной связи для связи с нашей командой садоводов.">
+    <title>Обратная связь | САД35</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/icons/is.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <!-- Шапка с фиксированным меню -->
+    <header class="site-header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <img src="img/icons/is.png" alt="САД35">
+                    <span>САД35</span>
+                </a>
+                <nav class="main-navigation">
+                    <button class="menu-toggle" aria-label="Меню">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul class="menu">
+                        <li><a href="index.html"><span class="icon">🌿</span> Главная</a></li>
+                        <li><a href="calendar.html"><span class="icon">📅</span> Фенологический календарь</a></li>
+                        <li><a href="tips.html"><span class="icon">💡</span> Советы по уходу</a></li>
+                        <li><a href="about.html"><span class="icon">👤</span> О нас</a></li>
+                        <li><a href="gallery.html"><span class="icon">📸</span> Галерея работ</a></li>
+                        <li><a href="fertilizers.html"><span class="icon">🌱</span> Виды удобрений</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero-секция -->
+    <section class="hero-section contact-hero fade-in">
+        <div class="hero-content">
+            <h1 class="pulse">Обратная связь</h1>
+            <p>Напишите нам, и мы обязательно ответим на ваши вопросы</p>
+        </div>
+    </section>
+
+    <!-- Форма обратной связи -->
+    <section class="section contact-form-section fade-in">
+        <div class="container">
+            <div class="form-container">
+                <h2 class="section-title">Напишите нам</h2>
+                <p class="form-description">Мы всегда рады помочь с вашими вопросами по садоводству. Заполните форму, и наш специалист ответит вам в течение 24 часов.</p>
+                
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Ваше имя *</label>
+                        <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" placeholder="Введите ваш email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Телефон</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Введите ваш телефон">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Тема обращения *</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Выберите тему</option>
+                            <option value="consultation">Консультация по саду</option>
+                            <option value="problem">Проблема с растениями</option>
+                            <option value="calendar">Вопрос по календарю</option>
+                            <option value="gallery">Галерея работ</option>
+                            <option value="other">Другое</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Сообщение *</label>
+                        <textarea id="message" name="message" rows="6" placeholder="Опишите ваш вопрос подробно" required></textarea>
+                    </div>
+                    
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="privacy" name="privacy" required>
+                        <label for="privacy">Я согласен с <a href="privacy.html">политикой конфиденциальности</a></label>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary submit-btn">Отправить сообщение</button>
+                </form>
+                
+                <div class="contact-info">
+                    <h3>Контактная информация</h3>
+                    <ul class="contacts-list">
+                        <li><span class="contact-icon">📧</span> info@sad35.ru</li>
+                        <li><span class="contact-icon">📱</span> +7 (495) 123-45-67</li>
+                        <li><span class="contact-icon">📍</span> г. Москва, ул. Садовая, д. 15</li>
+                        <li><span class="contact-icon">🕒</span> Пн-Пт: 9:00 - 18:00, Сб: 10:00 - 14:00</li>
+                    </ul>
+                    
+                    <div class="social-links">
+                        <h3>Мы в соцсетях</h3>
+                        <div class="social-icons">
+                            <a href="#" aria-label="ВКонтакте"><span class="social-icon">.VK</span></a>
+                            <a href="#" aria-label="Telegram"><span class="social-icon">.TG</span></a>
+                            <a href="#" aria-label="Instagram"><span class="social-icon">.IG</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Карта (заглушка) -->
+    <section class="section map-section fade-in">
+        <div class="container">
+            <h2 class="section-title">Наше расположение</h2>
+            <div class="map-placeholder">
+                <p>Карта будет доступна позже. Пока вы можете найти нас по адресу:</p>
+                <p class="map-address">г. Москва, ул. Садовая, д. 15</p>
+                <div class="map-image">
+                    <img src="img/maps-placeholder.jpg" alt="Схема проезда">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-widget">
+                    <div class="footer-logo">
+                        <img src="img/icons/is.png" alt="САД35">
+                        <span>САД35</span>
+                    </div>
+                    <p>Мы — команда профессиональных садоводов и ландшафтных дизайнеров с более чем 20-летним опытом.</p>
+                </div>
+                <div class="footer-widget">
+                    <h3>Полезные ссылки</h3>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="calendar.html">Календарь ухода</a></li>
+                        <li><a href="tips.html">Советы по уходу</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                    </ul>
+                </div>
+                <div class="footer-widget">
+                    <h3>Ресурсы</h3>
+                    <ul>
+                        <li><a href="gallery.html">Галерея работ</a></li>
+                        <li><a href="fertilizers.html">Виды удобрений</a></li>
+                        <li><a href="blog.html">Блог</a></li>
+                    </ul>
+                </div>
+                <div class="footer-widget">
+                    <h3>Контакты</h3>
+                    <ul class="contacts">
+                        <li>📧 info@sad35.ru</li>
+                        <li>📱 +7 (495) 123-45-67</li>
+                        <li>📍 г. Москва, ул. Садовая, д. 15</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-navigation">
+                <a href="index.html">Главная</a>
+                <a href="calendar.html">Календарь ухода</a>
+                <a href="tips.html">Советы по уходу</a>
+                <a href="about.html">О нас</a>
+                <a href="gallery.html">Галерея работ</a>
+                <a href="fertilizers.html">Виды удобрений</a>
+                <a href="blog.html">Блог</a>
+                <a href="contact.html">Контакты</a>
+                <a href="privacy.html">Политика конфиденциальности</a>
+            </div>
+            
+            <div class="site-info">
+                <p>&copy; <span data-year="2025"></span> САД35. Сделано с любовью к садам ❤️</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Модальное окно с подтверждением -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-icon">✅</div>
+            <h2>Спасибо за ваше сообщение!</h2>
+            <p>Мы получили вашу заявку и ответим вам в течение 24 часов. Наши специалисты уже работают над вашим вопросом.</p>
+            <button class="btn btn-primary close-modal-btn">Закрыть</button>
+        </div>
+    </div>
+
+    <!-- Кнопка "Наверх" -->
+    <button id="back-to-top" aria-label="Наверх">
+        <span>↑</span>
+    </button>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader">
+            <div class="leaf"></div>
+            <div class="leaf"></div>
+            <div class="leaf"></div>
+        </div>
+        <p>Создаем идеальный сад...</p>
+    </div>
+
+    <!-- JavaScript для формы обратной связи -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const contactForm = document.getElementById('contactForm');
+            const successModal = document.getElementById('successModal');
+            const closeModalBtns = document.querySelectorAll('.close-modal, .close-modal-btn');
+            
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // Здесь можно добавить валидацию формы
+                    const name = document.getElementById('name').value;
+                    const email = document.getElementById('email').value;
+                    const subject = document.getElementById('subject').value;
+                    const message = document.getElementById('message').value;
+                    
+                    // Имитация отправки формы
+                    setTimeout(() => {
+                        // Очистка формы
+                        contactForm.reset();
+                        
+                        // Показ модального окна
+                        successModal.style.display = 'block';
+                        
+                        // Закрытие модального окна через 5 секунд
+                        setTimeout(() => {
+                            successModal.style.display = 'none';
+                        }, 5000);
+                    }, 1000);
+                });
+            }
+            
+            // Закрытие модального окна
+            closeModalBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    successModal.style.display = 'none';
+                });
+            });
+            
+            // Закрытие модального окна при клике вне его
+            window.addEventListener('click', function(e) {
+                if (e.target === successModal) {
+                    successModal.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

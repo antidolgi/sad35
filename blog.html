@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Блог о садоводстве. Статьи, советы и полезная информация для садоводов.">
+    <title>Блог | САД35</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/icons/is.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <!-- Шапка с фиксированным меню -->
+    <header class="site-header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <img src="img/icons/is.png" alt="САД35">
+                    <span>САД35</span>
+                </a>
+                <nav class="main-navigation">
+                    <button class="menu-toggle" aria-label="Меню">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul class="menu">
+                        <li><a href="index.html"><span class="icon">🌿</span> Главная</a></li>
+                        <li><a href="calendar.html"><span class="icon">📅</span> Фенологический календарь</a></li>
+                        <li><a href="tips.html"><span class="icon">💡</span> Советы по уходу</a></li>
+                        <li><a href="about.html"><span class="icon">👤</span> О нас</a></li>
+                        <li><a href="gallery.html"><span class="icon">📸</span> Галерея работ</a></li>
+                        <li><a href="fertilizers.html"><span class="icon">🌱</span> Виды удобрений</a></li>
+                        <li><a href="blog.html" class="active"><span class="icon">📝</span> Блог</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero-секция -->
+    <section class="hero-section blog-hero fade-in">
+        <div class="hero-content">
+            <h1 class="pulse">Блог садовода</h1>
+            <p>Полезные статьи, советы и вдохновение для вашего сада</p>
+            <a href="#articles" class="btn btn-primary">Читать статьи</a>
+        </div>
+    </section>
+
+    <!-- Поиск и категории -->
+    <section class="section search-section fade-in">
+        <div class="container">
+            <div class="search-container">
+                <div class="search-box">
+                    <input type="text" placeholder="Поиск по статьям..." id="searchInput">
+                    <button type="submit" aria-label="Поиск"><span class="search-icon">🔍</span></button>
+                </div>
+                
+                <div class="categories-filter">
+                    <span class="filter-title">Категории:</span>
+                    <button class="category-btn active" data-category="all">Все</button>
+                    <button class="category-btn" data-category="roses">Розы</button>
+                    <button class="category-btn" data-category="vegetables">Овощи</button>
+                    <button class="category-btn" data-category="flowers">Цветы</button>
+                    <button class="category-btn" data-category="trees">Деревья</button>
+                    <button class="category-btn" data-category="fertilizers">Удобрения</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Статьи -->
+    <section class="section articles-section fade-in" id="articles">
+        <div class="container">
+            <h2 class="section-title">Последние статьи</h2>
+            
+            <div class="articles-grid">
+                <!-- Статья 1 -->
+                <article class="blog-article" data-category="roses">
+                    <div class="article-content">
+                        <span class="article-date">15 декабря 2025</span>
+                        <h3><a href="article1.html">Как правильно обрезать розы осенью</a></h3>
+                        <p>Обрезка роз осенью — важный этап подготовки к зиме. В этой статье мы расскажем, когда и как правильно обрезать розы, чтобы они хорошо перезимовали и обильно цвели следующим летом. Мы рассмотрим разные виды роз и особенности их обрезки.</p>
+                        <div class="article-meta">
+                            <span class="article-author">Елена Петрова</span>
+                            <span class="article-comments">12 комментариев</span>
+                        </div>
+                        <a href="article1.html" class="read-more">Читать статью →</a>
+                    </div>
+                </article>
+                
+                <!-- Статья 2 -->
+                <article class="blog-article" data-category="vegetables">
+                    <div class="article-content">
+                        <span class="article-date">10 декабря 2025</span>
+                        <h3><a href="article2.html">Посадка чеснока под зиму: сроки и правила</a></h3>
+                        <p>Чеснок, посаженный под зиму, дает более крупные головки и созревает раньше, чем весенний. В этой статье мы расскажем о правильных сроках посадки, выборе сортов, подготовке почвы и уходе за чесноком зимой и весной. Узнайте секреты получения богатого урожая.</p>
+                        <div class="article-meta">
+                            <span class="article-author">Александр Иванов</span>
+                            <span class="article-comments">8 комментариев</span>
+                        </div>
+                        <a href="article2.html" class="read-more">Читать статью →</a>
+                    </div>
+                </article>
+                
+                <!-- Статья 3 -->
+                <article class="blog-article" data-category="flowers">
+                    <div class="article-content">
+                        <span class="article-date">5 декабря 2025</span>
+                        <h3><a href="article3.html">Луковичные цветы для осенней посадки</a></h3>
+                        <p>Осень — идеальное время для посадки луковичных цветов. В этой статье мы расскажем о лучших сортах тюльпанов, нарциссов, гиацинтов и крокусов, которые порадуют вас цветением уже следующей весной. Узнайте, как правильно выбрать луковицы, подготовить почву и ухаживать за растениями.</p>
+                        <div class="article-meta">
+                            <span class="article-author">Мария Соколова</span>
+                            <span class="article-comments">15 комментариев</span>
+                        </div>
+                        <a href="article3.html" class="read-more">Читать статью →</a>
+                    </div>
+                </article>
+                
+                <!-- Статья 4 -->
+                <article class="blog-article" data-category="trees">
+                    <div class="article-content">
+                        <span class="article-date">1 декабря 2025</span>
+                        <h3><a href="article4.html">Обрезка плодовых деревьев зимой</a></h3>
+                        <p>Зима — лучшее время для обрезки плодовых деревьев. В этой статье мы расскажем, как правильно обрезать яблони, груши, вишни и сливы, чтобы повысить их урожайность и сохранить здоровье. Мы рассмотрим схемы обрезки для молодых и старых деревьев, а также дадим советы по уходу после процедуры.</p>
+                        <div class="article-meta">
+                            <span class="article-author">Дмитрий Козлов</span>
+                            <span class="article-comments">20 комментариев</span>
+                        </div>
+                        <a href="article4.html" class="read-more">Читать статью →</a>
+                    </div>
+                </article>
+                
+                <!-- Статья 5 -->
+                <article class="blog-article" data-category="fertilizers">
+                    <div class="article-content">
+                        <span class="article-date">25 ноября 2025</span>
+                        <h3><a href="article5.html">Органические удобрения для сада своими руками</a></h3>
+                        <p>Органические удобрения — безопасный и эффективный способ подкормить ваши растения. В этой статье мы расскажем, как приготовить компост, настой крапивы, дрожжевую подкормку и другие натуральные удобрения в домашних условиях. Узнайте, как использовать эти удобрения для разных культур и в какие сроки их вносить.</p>
+                        <div class="article-meta">
+                            <span class="article-author">Елена Петрова</span>
+                            <span class="article-comments">18 комментариев</span>
+                        </div>
+                        <a href="article5.html" class="read-more">Читать статью →</a>
+                    </div>
+                </article>
+                
+                <!-- Статья 6 -->
+                <article class="blog-article" data-category="roses">
+                    <div class="article-content">
+                        <span class="article-date">20 ноября 2025</span>
+                        <h3><a href="article6.html">Защита роз от черной пятнистости</a></h3>
+                        <p>Черная пятнистость — одно из самых опасных заболеваний роз. В этой статье мы расскажем, как распознать болезнь на ранней стадии, какие профилактические меры принять и как бороться с заболеванием с помощью как народных, так и химических средств. Узнайте, как спасти ваши любимые розы и предотвратить рецидивы в будущем.</p>
+                        <div class="article-meta">
+                            <span class="article-author">Александр Иванов</span>
+                            <span class="article-comments">25 комментариев</span>
+                        </div>
+                        <a href="article6.html" class="read-more">Читать статью →</a>
+                    </div>
+                </article>
+            </div>
+            
+            <!-- Пагинация -->
+            <div class="pagination">
+                <a href="#" class="page-btn active">1</a>
+                <a href="#" class="page-btn">2</a>
+                <a href="#" class="page-btn">3</a>
+                <a href="#" class="page-btn next">→</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Популярные статьи -->
+    <section class="section popular-section fade-in">
+        <div class="container">
+            <h2 class="section-title">Популярные статьи</h2>
+            <div class="popular-grid">
+                <div class="popular-card">
+                    <div class="popular-icon">🔥</div>
+                    <div class="popular-content">
+                        <h4><a href="article1.html">Как правильно обрезать розы осенью</a></h4>
+                        <div class="popular-stats">
+                            <span>🔥 152 просмотра</span>
+                            <span>💬 12 комментариев</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="popular-card">
+                    <div class="popular-icon">🔥</div>
+                    <div class="popular-content">
+                        <h4><a href="article3.html">Луковичные цветы для осенней посадки</a></h4>
+                        <div class="popular-stats">
+                            <span>🔥 148 просмотров</span>
+                            <span>💬 15 комментариев</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="popular-card">
+                    <div class="popular-icon">🔥</div>
+                    <div class="popular-content">
+                        <h4><a href="article5.html">Органические удобрения для сада своими руками</a></h4>
+                        <div class="popular-stats">
+                            <span>🔥 145 просмотров</span>
+                            <span>💬 18 комментариев</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="popular-card">
+                    <div class="popular-icon">🔥</div>
+                    <div class="popular-content">
+                        <h4><a href="article4.html">Обрезка плодовых деревьев зимой</a></h4>
+                        <div class="popular-stats">
+                            <span>🔥 140 просмотров</span>
+                            <span>💬 20 комментариев</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подписка на блог -->
+    <section class="cta-section fade-in">
+        <div class="container">
+            <h2>Подписывайтесь на наш блог</h2>
+            <p>Получайте новые статьи о садоводстве прямо на вашу почту</p>
+            <div class="cta-form">
+                <input type="email" placeholder="Ваш email" required>
+                <button type="submit" class="btn btn-primary">Подписаться</button>
+            </div>
+            <p class="small-text">Мы отправляем только полезные статьи. Никакого спама!</p>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-widget">
+                    <div class="footer-logo">
+                        <img src="img/icons/is.png" alt="САД35">
+                        <span>САД35</span>
+                    </div>
+                    <p>Мы — команда профессиональных садоводов и ландшафтных дизайнеров с более чем 20-летним опытом.</p>
+                </div>
+                <div class="footer-widget">
+                    <h3>Полезные ссылки</h3>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="calendar.html">Календарь ухода</a></li>
+                        <li><a href="tips.html">Советы по уходу</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                    </ul>
+                </div>
+                <div class="footer-widget">
+                    <h3>Ресурсы</h3>
+                    <ul>
+                        <li><a href="gallery.html">Галерея работ</a></li>
+                        <li><a href="fertilizers.html">Виды удобрений</a></li>
+                        <li><a href="blog.html">Блог</a></li>
+                    </ul>
+                </div>
+                <div class="footer-widget">
+                    <h3>Контакты</h3>
+                    <ul class="contacts">
+                        <li>📧 info@sad35.ru</li>
+                        <li>📱 +7 (495) 123-45-67</li>
+                        <li>📍 г. Москва, ул. Садовая, д. 15</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-navigation">
+                <a href="index.html">Главная</a>
+                <a href="calendar.html">Календарь ухода</a>
+                <a href="tips.html">Советы по уходу</a>
+                <a href="about.html">О нас</a>
+                <a href="gallery.html">Галерея работ</a>
+                <a href="fertilizers.html">Виды удобрений</a>
+                <a href="blog.html">Блог</a>
+                <a href="contact.html">Контакты</a>
+                <a href="privacy.html">Политика конфиденциальности</a>
+            </div>
+            
+            <div class="site-info">
+                <p>&copy; <span data-year="2025"></span> САД35. Сделано с любовью к садам ❤️</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript для фильтрации статей -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const searchInput = document.getElementById('searchInput');
+            const categoryBtns = document.querySelectorAll('.category-btn');
+            const articles = document.querySelectorAll('.blog-article');
+            
+            // Поиск по статьям
+            if (searchInput) {
+                searchInput.addEventListener('input', function() {
+                    const searchTerm = this.value.toLowerCase();
+                    
+                    articles.forEach(article => {
+                        const title = article.querySelector('h3 a').textContent.toLowerCase();
+                        const content = article.querySelector('p').textContent.toLowerCase();
+                        
+                        if (title.includes(searchTerm) || content.includes(searchTerm)) {
+                            article.style.display = 'block';
+                        } else {
+                            article.style.display = 'none';
+                        }
+                    });
+                });
+            }
+            
+            // Фильтрация по категориям
+            categoryBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Убираем активный класс со всех кнопок
+                    categoryBtns.forEach(b => b.classList.remove('active'));
+                    // Добавляем активный класс текущей кнопке
+                    this.classList.add('active');
+                    
+                    const category = this.getAttribute('data-category');
+                    
+                    articles.forEach(article => {
+                        if (category === 'all' || article.getAttribute('data-category') === category) {
+                            article.style.display = 'block';
+                        } else {
+                            article.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+
+    <!-- Кнопка "Наверх" и Preloader (тот же код) -->
+    <button id="back-to-top" aria-label="Наверх">
+        <span>↑</span>
+    </button>
+
+    <div id="preloader">
+        <div class="loader">
+            <div class="leaf"></div>
+            <div class="leaf"></div>
+            <div class="leaf"></div>
+        </div>
+        <p>Создаем идеальный сад...</p>
+    </div>
+</body>
+</html>
