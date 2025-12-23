@@ -241,3 +241,16 @@ function addCSSAnimations() {
 }
 
 addCSSAnimations();
+// Автоматическая подгонка изображений в галерее
+function resizeGalleryImages() {
+    const galleryItems = document.querySelectorAll('.gallery-item');
+    galleryItems.forEach(item => {
+        const img = item.querySelector('img');
+        const width = item.offsetWidth;
+        img.style.height = `${width * 0.75}px`; // Соотношение 4:3
+    });
+}
+
+// Вызываем при загрузке и при изменении размера окна
+window.addEventListener('load', resizeGalleryImages);
+window.addEventListener('resize', resizeGalleryImages);
