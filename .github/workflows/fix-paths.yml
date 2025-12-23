@@ -1,0 +1,24 @@
+name: Fix Paths Before Deploy
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  fix-paths:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Fix all paths
+      run: |
+        find . -name "*.html" -o -name "*.css" -o -name "*.js" | xargs sed -i 's|src="/|src="|g'
+        find . -name "*.html" -o -name "*.css" -o -name "*.js" | xargs sed -i 's|url('\''/|url('\''../|g'
+    
+    - name: Commit changes
+      run: |
+        git config --global user.name 'github-actions'
+        git config --global user.email 'github-actions@github.com'
+        git add .
+        git commit -m "fix: fix all paths for GitHub Pages" || exit 0
+        git push
