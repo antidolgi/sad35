@@ -1,1 +1,262 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Фенологический календарь ухода за растениями. Планируйте работы в саду по сезонам.">
+    <title>Фенологический календарь | САД35</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/logo.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <!-- Шапка с фиксированным меню -->
+    <header class="site-header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <img src="img/logo.png" alt="САД35">
+                    <span>САД35</span>
+                </a>
+                <nav class="main-navigation">
+                    <button class="menu-toggle" aria-label="Меню">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul class="menu">
+                        <li><a href="index.html"><span class="icon">🌿</span> Главная</a></li>
+                        <li><a href="calendar.html" class="active"><span class="icon">📅</span> Фенологический календарь</a></li>
+                        <li><a href="tips.html"><span class="icon">💡</span> Советы по уходу</a></li>
+                        <li><a href="about.html"><span class="icon">👤</span> О нас</a></li>
+                        <li><a href="gallery.html"><span class="icon">📸</span> Галерея работ</a></li>
+                        <li><a href="fertilizers.html"><span class="icon">🌱</span> Виды удобрений</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
 
+    <!-- Hero-секция -->
+    <section class="hero-section calendar-hero fade-in">
+        <div class="hero-content">
+            <h1 class="pulse">Фенологический календарь ухода за растениями</h1>
+            <p>Планируйте уход за растениями заранее и получайте отличные результаты</p>
+            <a href="#calendar" class="btn btn-primary">Перейти к календарю</a>
+        </div>
+    </section>
+
+    <!-- Описание календаря -->
+    <section class="section calendar-description fade-in">
+        <div class="container">
+            <div class="calendar-intro">
+                <h2>Как пользоваться календарем</h2>
+                <p>Фенологический календарь помогает определить оптимальные сроки проведения работ в саду, основываясь на природных циклах растений и погодных условиях вашего региона.</p>
+                
+                <div class="calendar-benefits">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">📊</div>
+                        <h3>Персонализация</h3>
+                        <p>Учитывает климат вашего региона и типы растений в саду</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">⏰</div>
+                        <h3>Напоминания</h3>
+                        <p>Получайте уведомления о важных работах в нужное время</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">📱</div>
+                        <h3>Доступность</h3>
+                        <p>Доступен на всех устройствах - телефоне, планшете, компьютере</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Заглушка календаря -->
+    <section class="section calendar-placeholder fade-in" id="calendar">
+        <div class="container">
+            <h2 class="section-title">Календарь ухода за растениями</h2>
+            <div class="calendar-container">
+                <div class="calendar-box">
+                    <h3>Скоро доступен!</h3>
+                    <p>Здесь будет интерактивный календарь с рекомендациями по уходу за вашими растениями в зависимости от времени года.</p>
+                    
+                    <div class="calendar-steps">
+                        <div class="step">
+                            <strong>1. Выберите месяц</strong>
+                            <p>Просмотрите работы на нужный месяц</p>
+                        </div>
+                        <div class="step">
+                            <strong>2. Посмотрите работы</strong>
+                            <p>Подробные инструкции по каждому виду работ</p>
+                        </div>
+                        <div class="step">
+                            <strong>3. Получите уведомления</strong>
+                            <p>Напоминания о важных работах в вашем регионе</p>
+                        </div>
+                        <div class="step">
+                            <strong>4. Сохраните PDF</strong>
+                            <p>Скачайте календарь для печати и использования оффлайн</p>
+                        </div>
+                    </div>
+                    
+                    <div class="calendar-subscription">
+                        <h4>Хотите первыми получить доступ к календарю?</h4>
+                        <p>Подпишитесь на обновления и получите уведомление о запуске</p>
+                        <div class="subscription-form">
+                            <input type="email" placeholder="Ваш email" required>
+                            <button type="submit" class="btn btn-primary">Подписаться</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Сезонные рекомендации -->
+    <section class="section seasonal-tips fade-in">
+        <div class="container">
+            <h2 class="section-title">Сезонные рекомендации</h2>
+            <p class="section-subtitle">Основные работы в саду по месяцам</p>
+            
+            <div class="seasons-tabs">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-tab="winter">Зима</button>
+                    <button class="tab-btn" data-tab="spring">Весна</button>
+                    <button class="tab-btn" data-tab="summer">Лето</button>
+                    <button class="tab-btn" data-tab="autumn">Осень</button>
+                </div>
+                
+                <div class="tab-content active" id="winter">
+                    <h3>Декабрь-Январь-Февраль</h3>
+                    <ul class="seasonal-list">
+                        <li>❄️ Планирование сада на следующий год</li>
+                        <li>❄️ Заказ семян и посадочного материала</li>
+                        <li>❄️ Уход за комнатными растениями</li>
+                        <li>❄️ Обрезка плодовых деревьев (в оттепель)</li>
+                        <li>❄️ Защита растений от морозов</li>
+                    </ul>
+                </div>
+                
+                <div class="tab-content" id="spring">
+                    <h3>Март-Апрель-Май</h3>
+                    <ul class="seasonal-list">
+                        <li>🌸 Санитарная обрезка роз и кустарников</li>
+                        <li>🌸 Первая подкормка азотными удобрениями</li>
+                        <li>🌸 Посадка холодостойких культур</li>
+                        <li>🌸 Защита от возвратных заморозков</li>
+                        <li>🌸 Мульчирование почвы</li>
+                    </ul>
+                </div>
+                
+                <div class="tab-content" id="summer">
+                    <h3>Июнь-Июль-Август</h3>
+                    <ul class="seasonal-list">
+                        <li>☀️ Обильный полив в жаркую погоду</li>
+                        <li>☀️ Удаление увядших цветов</li>
+                        <li>☀️ Борьба с вредителями и болезнями</li>
+                        <li>☀️ Подкормка калийно-фосфорными удобрениями</li>
+                        <li>☀️ Формирование растений</li>
+                    </ul>
+                </div>
+                
+                <div class="tab-content" id="autumn">
+                    <h3>Сентябрь-Октябрь-Ноябрь</h3>
+                    <ul class="seasonal-list">
+                        <li>🍂 Сбор урожая и подготовка к хранению</li>
+                        <li>🍂 Посадка луковичных цветов</li>
+                        <li>🍂 Подкормка фосфорно-калийными удобрениями</li>
+                        <li>🍂 Подготовка сада к зиме</li>
+                        <li>🍂 Укрытие роз и теплолюбивых растений</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Призыв к действию -->
+    <section class="cta-section fade-in">
+        <div class="container">
+            <h2>Начните планировать ваш сад уже сегодня!</h2>
+            <p>Подпишитесь на рассылку и получите бесплатное руководство по сезонным работам</p>
+            <div class="cta-form">
+                <input type="email" placeholder="Ваш email" required>
+                <button type="submit" class="btn btn-primary">Получить руководство</button>
+            </div>
+            <p class="small-text">Подписываясь, вы соглашаетесь с <a href="privacy.html">политикой конфиденциальности</a></p>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-widget">
+                    <div class="footer-logo">
+                        <img src="img/logo.png" alt="САД35">
+                        <span>САД35</span>
+                    </div>
+                    <p>Мы — команда профессиональных садоводов и ландшафтных дизайнеров с более чем 20-летним опытом.</p>
+                </div>
+                <div class="footer-widget">
+                    <h3>Полезные ссылки</h3>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="calendar.html">Календарь ухода</a></li>
+                        <li><a href="tips.html">Советы по уходу</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                    </ul>
+                </div>
+                <div class="footer-widget">
+                    <h3>Ресурсы</h3>
+                    <ul>
+                        <li><a href="gallery.html">Галерея работ</a></li>
+                        <li><a href="fertilizers.html">Виды удобрений</a></li>
+                        <li><a href="privacy.html">Политика конфиденциальности</a></li>
+                    </ul>
+                </div>
+                <div class="footer-widget">
+                    <h3>Контакты</h3>
+                    <ul class="contacts">
+                        <li>📧 info@sad35.ru</li>
+                        <li>📱 +7 (495) 123-45-67</li>
+                        <li>📍 г. Москва, ул. Садовая, д. 15</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-navigation">
+                <a href="index.html">Главная</a>
+                <a href="calendar.html">Календарь ухода</a>
+                <a href="tips.html">Советы по уходу</a>
+                <a href="about.html">О нас</a>
+                <a href="gallery.html">Галерея работ</a>
+                <a href="fertilizers.html">Виды удобрений</a>
+                <a href="privacy.html">Политика конфиденциальности</a>
+            </div>
+            
+            <div class="site-info">
+                <p>&copy; <span data-year="2025"></span> САД35. Сделано с любовью к садам ❤️</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Кнопка "Наверх" -->
+    <button id="back-to-top" aria-label="Наверх">
+        <span>↑</span>
+    </button>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader">
+            <div class="leaf"></div>
+            <div class="leaf"></div>
+            <div class="leaf"></div>
+        </div>
+        <p>Создаем идеальный сад...</p>
+    </div>
+</body>
+</html>
