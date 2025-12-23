@@ -837,3 +837,21 @@ body {
         min-width: auto;
     }
 }
+/* Для всех изображений в галерее */
+.gallery-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover .gallery-image {
+    transform: scale(1.05);
+}
+
+/* Адаптивность для мобильных */
+@media (max-width: 768px) {
+    .gallery-image {
+        height: 200px;
+    }
+}
